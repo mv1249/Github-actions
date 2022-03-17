@@ -99,5 +99,26 @@ ________________________________________________________
 Here the name of the job is "My First Github Actions",then the "on" indicates when should the jobs perform,like on which set of actions,example "pull,push,commit" etc
 then we define the jobs,inside that jobs we first made our object which is "print-hello-world",and specified its keys like runs-on and steps,so steps is a list which has to perform actions sequentially,where as "print-hello-world" is just the object,which doesn't guarentee that the keys of it will run in sequence!
 
+________________________________________________________
+
+
+name: My first Github Actions
+on: [push]
+jobs:
+    build-app: 
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: '14'
+            - run: node -v
+
+________________________________________________________
+
+Here in this ymal we're trying to setup nodejs environment,so the entire thing is written in the steps list,which defines the uses,with and all,so first we need to checkout the the actions/checkout@v2 branch,which is available publically,then we have to setup node,following with a version of '14' as specified in the with statement,then we run the node with the "node -v" command.
+
+
+
 
 
