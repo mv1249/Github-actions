@@ -1,0 +1,14 @@
+# setting the manual configuration for the yml file
+
+myapp:
+    service: Github-actions
+    test: script1
+    test2: script2
+    myArray:
+        - key1: value1
+        - key2: value2
+
+    service: |
+        My name is Meet
+        I am xyz years old
+    key2: helloworld

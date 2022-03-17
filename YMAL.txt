@@ -68,8 +68,15 @@ _________________________|_____________________|
 _________________________|_____________________|_
 
 
-testkeytoken : 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
 
+Can add multiline comments in YMAL,which was not possible in 
+case of,so in case we're attempting to write a multiline strings,we have to use the "|" to indicate that the above lines are a part of multiline strings,this is how it looks like:
+_______________________________________________________
+		service: |
+			My name is Meet
+			I am xyz years old
+		key2: helloworld
+_______________________________________________________
 
 
 
