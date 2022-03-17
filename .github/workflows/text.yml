@@ -5,4 +5,10 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             - run: echo "hello world!!!!"
+            - run: echo "this is step number 1"
+
+    print-hello-world2:
+        runs-on: ubuntu-latest
+        steps: 
+            - run: echo "hello world2!!!!"
             - run: echo "this is step number 2"
