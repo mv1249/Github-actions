@@ -1,0 +1,77 @@
+-> For creating a workflow,you have to create a ".github" folder
+
+-> Inside that ".github" workflow,we have to create another folder
+named "workflows",inside which we can create the "yaml" files
+
+-> The ymal files are the ones which will try to keep track of the 
+integrations and developments!
+
+------------------------------------------------------------------
+
+			YMAL (Yet another markup language)
+
+------------------------------------------------------------------
+
+-> Json is a format of storing data which can be seemlesly 
+integrated and used by any kind of backend program we use,let it be JAVA
+or Python or C++ any kind of backend program into their workflows
+
+-> YMAL is a data-exchange format between systems and other 
+workflow environments,advantage of ymal over json is that,it is
+easy to read and write,there is simple english written with no
+special characters like {} or "" as we have in json
+
+YAML has two top-level elements, an object (which consists of key-value pairs) 
+and an array (which consists of an ordered set of values).
+
+simple comparision of a json file vs ymal file
+
+___________________________
+Json file    | YMAL file   |
+_____________|____________ |
+             |             |
+{	     |             |	
+  'a':val1,  |	a: val1    |
+  'b':val2   |	b: val2    |
+}            |             |
+____________ |_____________|
+
+Nested objects in YMAL : Must follow one indentation,easy to read and write,
+as the information is condensed,it is easy to read and interpret!
+genrally the data in both the YMAL and JSON is same,just that in YMAL it is easier
+to read the data as compared to the JSON,in JSON we do not support comments,where
+as YMAL supports comments,we can start of with the "#" and start the comment till our point
+
+
+
+myapp:
+	a:val1
+	b:val2
+	c:val3
+
+-> Lists in YMAL is a way of organising elements in an array,it is very easy to organise 
+nested objects data in YMAL rather than JSON,lets see an example for this,so in YMAL when
+ever we see a "-" it indicates that a new object has started.
+
+_______________________________________________
+                         |                     |
+JSON file                | YMAL File           |
+_________________________|_____________________|                         
+"myarr":[                |myarr                |
+	  {              |    - a:hello        |
+	    "a":hello    |    - b:hello1       |
+          },             |                     |
+          {              |                     |
+	     "b":hello1  |                     |
+          }	         |                     |
+	]                |                     |
+_________________________|_____________________|_
+
+
+testkeytoken : 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
+
+
+
+
+
+
