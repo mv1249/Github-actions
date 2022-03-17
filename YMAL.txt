@@ -78,7 +78,26 @@ _______________________________________________________
 		key2: helloworld
 _______________________________________________________
 
+			Getting Started with Github Actions
 
+_______________________________________________________
+
+
+Example of a Github Action job is shown below
+________________________________________________________
+
+name: My first Github Actions
+on: [push]
+jobs:
+    print-hello-world:
+        runs-on: ubuntu-latest
+        steps: 
+            - run: echo "hello world!!!!"
+
+________________________________________________________
+
+Here the name of the job is "My First Github Actions",then the "on" indicates when should the jobs perform,like on which set of actions,example "pull,push,commit" etc
+then we define the jobs,inside that jobs we first made our object which is "print-hello-world",and specified its keys like runs-on and steps,so steps is a list which has to perform actions sequentially,where as "print-hello-world" is just the object,which doesn't guarentee that the keys of it will run in sequence!
 
 
 
