@@ -12,6 +12,6 @@ jobs:
               run: yarn
             - name: Build the project
               run: yarn build
-            - name: Setup finished
+            - name: Setup finish
               run: echo "First CI-CD run!" 
 
